@@ -22,3 +22,11 @@ Required dependencies(Jars): 1.Rest-assured 2.TestNG 3.Hamcrest (TestNG & Hamcre
 
 
 >>>>>>Body maintanance and framework level
+
+
+
+Road map: 22 write and execute 
+          section 7, 9, 10, 11, 12, 13, 14
+          section 17(complete FW), 19
+          Last section 21(if you have time)
+          
