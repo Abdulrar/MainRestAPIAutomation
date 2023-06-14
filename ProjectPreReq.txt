@@ -1,0 +1,24 @@
+
+
+Note: 
+
+>>>>Click on project select 'Build Automatically' option
+>>>>Windows preferences Java>editor>typing-> select escape text when pasting option
+
+Path parameters:
+https://amazon.com/orders/112 
+--> BaseURL "https://amazon.com/",Resource untill "orders" & sub-resource(point specific resource with in a collection) untill "112".
+--> Path parameters "Resource & sub-resource"
+
+Query parameters:
+https://amazon.com/orders?sort_by=14/5/2023  (after ? parameter name[sort_by] = parameter value[14/5/2023]) (Each query is separated by ampersand[&])
+--> sort/filter the resources   Ex: based on ID we can filter
+
+End Point Request URL can be constructed as below
+BaseURL/resource/(Path/Query)Parameters
+
+
+Required dependencies(Jars): 1.Rest-assured 2.TestNG 3.Hamcrest (TestNG & Hamcrest for validations perpose)
+
+
+>>>>>>Body maintanance and framework level
