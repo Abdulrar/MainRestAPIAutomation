@@ -16,13 +16,7 @@ public class Parameterised_DataProvider_WithFile {
 	
 	@Test
 
-	public void addBook() throws IOException
-
-
-
-	{
-
-
+	public void addBook() throws IOException{
 
 	RestAssured.baseURI="http://216.10.245.166";
 

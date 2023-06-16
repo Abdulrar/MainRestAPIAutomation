@@ -53,7 +53,6 @@ public class PayLoad {
 				"]\r\n" + 
 				"\r\n" + 
 				"}";
-		
 	}
 	
 	
@@ -69,5 +68,26 @@ public class PayLoad {
 		
 		return payload;
 		
+	}
+	
+	public static String newPayload() {
+		
+		String str ="{\r\n"
+				+ "  \"array\": [\r\n"
+				+ "    1,\r\n"
+				+ "    2,\r\n"
+				+ "    3\r\n"
+				+ "  ],\r\n"
+				+ "  \"boolean\": true,\r\n"
+				+ "  \"color\": \"gold\",\r\n"
+				+ "  \"null\": null,\r\n"
+				+ "  \"number\": 123,\r\n"
+				+ "  \"object\": {\r\n"
+				+ "    \"a\": \"b\",\r\n"
+				+ "    \"c\": \"d\"\r\n"
+				+ "  },\r\n"
+				+ "  \"string\": \"Hello World\"\r\n"
+				+ "}";
+		return str;
 	}
 }

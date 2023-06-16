@@ -16,7 +16,7 @@ public class BasicsUpdate {
 
 		//Rest Assured works on three principles 1)Given 2)When and 3)Then   
 		///given - all input details 
-		//when - Submit the API - resource,http method
+		//when - Submit the API - resource,http method   ________> try with query parameter one
 		//Then - validate the response
 		
 		
@@ -43,7 +43,7 @@ public class BasicsUpdate {
 		
 		
 		//Update place
-		String newAdress = "70 Summer walk, USA";
+		String newAdress = "70 Summer walk, USAAAA";
 		
 		
 		given().log().all().queryParam("key", "qaclick123").header("Content-Type","application/json")

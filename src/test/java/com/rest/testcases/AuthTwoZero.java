@@ -24,7 +24,9 @@ public static void main(String[] args) throws InterruptedException {
 	
 String url ="https://rahulshettyacademy.com/getCourse.php?state=exactCode&code=4%2F0AY0e-g44GC6X_s-QjfpN2_wpgiFvJ3M8TU7gmZbrF7VRkhrWquGVlhfuyv5etBfkbsFkow&scope=email+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&prompt=none";
 
+//String partialcode=url.split("code=")[1];
 String partialcode=url.split("code=")[1];
+System.out.println("My auto partialcode ----->" + partialcode);
 
 String code=partialcode.split("&scope")[0];
 
