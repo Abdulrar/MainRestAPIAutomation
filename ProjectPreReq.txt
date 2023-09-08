@@ -1,12 +1,10 @@
-
-
 Note: 
 
 >>>>Click on project select 'Build Automatically' option
 >>>>Windows preferences Java>editor>typing-> select escape text when pasting option
 
-Required dependencies(Jars): 1.Rest-assured 2.TestNG 3.Hamcrest (TestNG & Hamcrest for validations perpose)
-                             4.Jackson Databind and GSON (for serialization, deserialization)
+Required dependencies(Jars): 1.Rest-assured 2.TestNG 3.Hamcrest (TestNG & Hamcrest for validations purpose)
+                             4.Jackson Data bind and GSON (for serialization, de-serialization)
 
 Path parameters:
 https://amazon.com/orders/112 
@@ -37,6 +35,21 @@ User friendly methods can be created which makes code more reusable.
 Designed Approach:
 Java object is constructed with the support of POJO classes, POJO classes are created based on the request/response payload. 
 ==================================================================================================================================
+Request & Response spec builder:
+What ever the comman code we will make one RequestSpecBuilder(class)(return type 'RequestSpecification') then we will reuse entire project.
+Ex:BaseURL, QueryParameters and any headers   in  response like status code any Headers 
+==================================================================================================================================
+End to end flow with Auth Token(Ecommerce API contract):
+URL: https://rahulshettyacademy.com/client 
+     UN: arahaman4770@gmail.com	
+     PW: Rest@2023
+ >>> While click on login go to the Network Tab > Fetch/XHR(so api calls filtered out)  
+ Note: To send an attachment make sure though only form-data(Body--> Eighther though Json or Form-Data )  
+==================================================================================================================================
+
+
+
+
 Authorization Grant Type:???????(know theory)
 
 
@@ -44,4 +57,3 @@ Road map: 22 write and execute
           section 7, 9, 10, 11, 12, 13, 14
           section 17(complete FW), 19
           Last section 21(if you have time)
-          
