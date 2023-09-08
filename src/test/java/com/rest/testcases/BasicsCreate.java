@@ -39,7 +39,7 @@ public class BasicsCreate {
 				"")
 		 .when().post("maps/api/place/add/json")
 		.then().log().all().assertThat().statusCode(200).body("scope", equalTo("APP"))
-		.header("Server", "Apache/2.4.18 (Ubuntu)");     
+		.header("Server", "Apache/2.4.52 (Ubuntu)");     
 		//server is one of the important validation weather we are getting from proper server which we are expecting if not then that might be hacked
 		// right
 		

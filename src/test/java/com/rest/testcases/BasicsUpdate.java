@@ -27,10 +27,10 @@ public class BasicsUpdate {
 		
 		//Because there are some packages they are static in nature --- like given() we have ti manually inport package
 		//equalTo method is coming from "hamcrest.Matchers" java package is it also static 
-		String responce = given().log().all().queryParam("key", "qaclick123").header("Content-Type","application/json")
-		.body(PayLoad.AddPlace()).when().post("maps/api/place/add/json")
+		String responce = given().log().all().queryParam("key", "qaclick123").header("Content-Type","application/json").body(PayLoad.AddPlace())
+		.when().post("maps/api/place/add/json")
 		.then().assertThat().statusCode(200).body("scope", equalTo("APP"))
-		.header("Server", "Apache/2.4.18 (Ubuntu)").extract().response().asString();
+		.header("Server", "Apache/2.4.52 (Ubuntu)").extract().response().asString();
 		
 		System.out.println("JSON Responce body ----> "+responce);
 		
@@ -43,7 +43,7 @@ public class BasicsUpdate {
 		
 		
 		//Update place
-		String newAdress = "70 Summer walk, USAAAA";
+		String newAdress = "70 Summer walk, US";
 		
 		
 		given().log().all().queryParam("key", "qaclick123").header("Content-Type","application/json")
@@ -60,8 +60,9 @@ public class BasicsUpdate {
 		
 System.out.println("Get please --------------------> ");
 		
-		String getResponce = given().log().all().queryParam("key", "qaclick123").queryParam("place_id", pleaseID).when().get("maps/api/place/get/json")
-		.then().log().all().assertThat().statusCode(200).extract().response().asString();;
+		String getResponce = given().log().all().queryParam("key", "qaclick123").queryParam("place_id", pleaseID)
+		.when().get("maps/api/place/get/json")
+		.then().log().all().assertThat().statusCode(200).extract().response().asString();
 		
 		System.out.println("JSON Get Responce body ----> "+getResponce);
 		
@@ -76,7 +77,7 @@ System.out.println("Get please --------------------> ");
 		Assert.assertEquals(actualAdress, newAdress);
 		
 		
-		System.out.println("JSON Get Responce address ----> "+actualAdress);
+		System.out.println("JSON Get Responce address (Actual Adress)----> "+actualAdress);
 		
 		
 	}

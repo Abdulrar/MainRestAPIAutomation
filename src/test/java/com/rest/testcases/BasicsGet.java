@@ -25,9 +25,10 @@ public class BasicsGet {
 		
 		//Because there are some packages they are static in nature --- like given() we have ti manually inport package
 		//equalTo method is coming from "hamcrest.Matchers" java package is it also static 
-		String responce = given().log().all().queryParam("key", "qaclick123").header("Content-Type","application/json").body(PayLoad.AddPlace()).when().post("maps/api/place/add/json")
+		String responce = given().log().all().queryParam("key", "qaclick123").header("Content-Type","application/json").body(PayLoad.AddPlace())
+		.when().post("maps/api/place/add/json")
 		.then().assertThat().statusCode(200).body("scope", equalTo("APP"))
-		.header("Server", "Apache/2.4.18 (Ubuntu)").extract().response().asString();
+		.header("Server", "Apache/2.4.52 (Ubuntu)").extract().response().asString();
 		
 		System.out.println("JSON Responce body ----> "+responce);
 		

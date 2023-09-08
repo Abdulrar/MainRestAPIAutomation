@@ -52,8 +52,9 @@ URL: https://rahulshettyacademy.com/client
 
 Authorization Grant Type:???????(know theory)
 
-
-Road map: 22 write and execute 
+            
+Road map: 18, 19, 20 
+          22 write and execute 
           section 7, 9, 10, 11, 12, 13, 14
           section 17(complete FW), 19
           Last section 21(if you have time)
